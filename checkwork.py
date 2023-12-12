@@ -90,7 +90,6 @@ def main():
     values = simulate_bandit(
         num_stimuli, num_perceptrons, num_epochs, reinforcement, learning_rate
     )
-    print(values[0])
     epoch_recorded_values = [20 * x for x in range(0, num_epochs // 20 + 1)]
 
     plt.plot(epoch_recorded_values, values[0], color="r", label="DS1")
